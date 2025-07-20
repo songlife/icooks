@@ -2,7 +2,16 @@
 
 ## Overview
 
-This is a full-stack web application for iCooks, a Korean food service management company specializing in meal planning and supervision for children's facilities and social welfare institutions. The application features a modern React frontend with a Korean-language interface and an Express.js backend with PostgreSQL database integration.
+This is a full-stack web application for iCooks, a Korean food service management company specializing in meal planning and supervision for children's facilities and social welfare institutions. The application features a modern Next.js frontend with SEO optimization, Korean-language interface, Radix UI components, and an Express.js backend with PostgreSQL database integration.
+
+## Recent Changes (2024-07-20)
+
+✓ Migrated from Vite + React to Next.js App Router for better SEO and performance
+✓ Implemented comprehensive SEO optimization with meta tags, structured data, and Open Graph
+✓ Added Korean-focused keywords for search engine visibility
+✓ Integrated Google Fonts (Noto Sans KR) for Korean typography
+✓ Maintained all existing Radix UI components and functionality
+✓ Updated project structure for Next.js app directory
 
 ## User Preferences
 
@@ -11,13 +20,14 @@ Preferred communication style: Simple, everyday language.
 ## System Architecture
 
 ### Frontend Architecture
-- **Framework**: React 18 with TypeScript
-- **Routing**: Wouter for client-side routing
-- **UI Components**: shadcn/ui components built on Radix UI primitives
+- **Framework**: Next.js 15 with App Router and TypeScript
+- **SEO**: next-seo, structured data, Open Graph meta tags, Korean keyword optimization
+- **UI Components**: shadcn/ui components built on Radix UI primitives (maintained from previous version)
 - **Styling**: Tailwind CSS with custom Korean brand colors
+- **Typography**: Google Fonts integration (Noto Sans KR, Inter)
 - **State Management**: TanStack Query for server state management
 - **Form Handling**: React Hook Form with Zod validation
-- **Build Tool**: Vite with custom configuration for development and production
+- **Build Tool**: Next.js with optimized production builds and image optimization
 
 ### Backend Architecture
 - **Framework**: Express.js with TypeScript

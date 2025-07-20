@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# SEO-friendly URLs for Korean content
+Allow: /services
+Allow: /about
+Allow: /contact
+Allow: /success-stories
+
+# Sitemap location
+Sitemap: https://www.icooks.kr/sitemap.xml
+
+# Crawl delay for better server performance
+Crawl-delay: 1
