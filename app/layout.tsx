@@ -1,10 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Noto_Sans_KR, Inter } from 'next/font/google'
-import { QueryClientProvider } from '@tanstack/react-query'
-import { queryClient } from '@/lib/queryClient'
+import Providers from './providers'
 import { Toaster } from '@/components/ui/toaster'
-import { TooltipProvider } from '@/components/ui/tooltip'
 
 const notoSansKR = Noto_Sans_KR({
   subsets: ['latin'],
@@ -128,12 +126,10 @@ export default function RootLayout({
         />
       </head>
       <body className="font-korean antialiased">
-        <QueryClientProvider client={queryClient}>
-          <TooltipProvider>
-            {children}
-            <Toaster />
-          </TooltipProvider>
-        </QueryClientProvider>
+        <Providers>
+          {children}
+          <Toaster />
+        </Providers>
       </body>
     </html>
   )
